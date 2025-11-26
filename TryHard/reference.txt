@@ -1,0 +1,55 @@
+While loop pseudocode
+
+SET count to 1
+WHILE count less than or equal to 5 THEN
+	display count
+	increment count
+ENDWHILE
+
+Average loop pseudocode
+
+read measurement #1
+add to total
+….
+read measurement #24
+add to total
+average = total / 24
+
+IF else pseudocode
+
+IF BMI < 18.5 THEN
+	display “Risk of developing osteoporosis"
+ELSE IF BMI < 23 THEN
+	display “Healthy"
+ELSE IF BMI < 27.5 THEN
+	display “Low risk of developing heart disease, stroke, etc."
+ELSE
+	display “High risk of developing heart disease, stroke, etc."
+ENDIF
+
+
+#Removing duplicates in a list
+
+names = ['lee', 'lee', 'tan', 'lee', 'lee', 'tan', 'kacey', 'oppo', 'apple', 'oppo']
+store_name = names.copy()
+
+for i in names:
+    if names.count(i) > 1:
+        store_name.remove(i)
+        names = store_name
+
+print(store_name)
+
+#Sorting algorithm
+
+def bubbleSort(alist):
+    for passnum in range(len(alist)-1,0,-1):
+        for i in range(passnum):
+            if alist[i]>alist[i+1]:
+                temp = alist[i]
+                alist[i] = alist[i+1]
+                alist[i+1] = temp
+
+alist = [54,26,93,17,77,31,44,55,20]
+bubbleSort(alist)
+print(alist)
